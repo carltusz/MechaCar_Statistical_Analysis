@@ -39,12 +39,19 @@ Lot 3 fails to meet this criteria, with a variance of 170 PSI.
 
 While Lot 3 fails to meet this criteria, the overall population does meet it because of the larger sample size diluting the impact of wider variation in PSI observed in the one lot.
 
-## T-Tests on Suspension Coils
+## T-Tests on Suspension Coils 
 
 The following T-Test summaries show:
-- Lot One has statistically the same mean as the population (P-Value = 1.7E-11)
-- Lot Two has the same statistical mean as the population (P-Value = 5.0E-4) but less so than Lot One
-- Lot Three does not have the same statistical mean as the population (P-Value = 0.16)
+- The samples from all lots do not have the same mean as the population (P-Value = 0.6) with a 95% confidence interval. They would be considered the same if the confidence interval was 94% or lower.
+- Lot One does not have the same mean as the population (P-Value = 1)
+- Lot Two does not have the same mean as the population (P-Value = 0.6)
+- Lot Three does have the same mean as the population (P-Value = 0.04), likely because it had the widest standard deviation of all lots, seen with a relatively large t (t=-2.1)
+
+The results of the t-test is swayed by the standard deviation of the sample data sets. The t values were large for the overall population and for Lot 3. Although Lot 3 had a wider than acceptable variance, it was the only sample to have a mean considered equal to 1500 PSI within a 95% confidence interval.
+
+### All Lots
+
+![](Resources/del3_all_lots.PNG)
 
 ### Lot One
 
